@@ -1,0 +1,26 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.desmos.com/api/v1.12/docs/index.html
+docs: https://www.desmos.com/my-api
+description: >-
+  The Desmos API authenticates with a single API key supplied as a URL query
+  parameter on the calculator.js script include. There is no OAuth, no bearer
+  token, and no server-side credential exchange — the key gates which calculator
+  products load client-side. Production keys are issued at desmos.com/my-api; a
+  public demo key ships in the documentation for development (see
+  sandbox/desmos-sandbox.yml).
+summary:
+  types: [apiKey]
+  api_key_in: [query]
+  oauth2_flows: []
+schemes:
+  - name: apiKey
+    type: apiKey
+    in: query
+    parameter: apiKey
+    transport: script-url
+    example: https://www.desmos.com/api/v1.12/calculator.js?apiKey=YOUR_API_KEY
+    notes: >-
+      Required to load the API. The Graphing Calculator loads by default; the
+      Four-Function, Scientific, and Geometry calculators must be separately
+      enabled per API key. Obtain a production key at https://www.desmos.com/my-api.
