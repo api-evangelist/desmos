@@ -1,0 +1,26 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.desmos.com/api
+description: >-
+  Version lifecycle and operational posture for the Desmos API. Versions are
+  pinned in the script URL path and progress through three channels —
+  experimental (tracks unreleased changes, breaking changes possible), stable
+  (production-recommended, no breaking API changes), and frozen (prior stable
+  versions preserved unchanged, no further updates). A new stable version is cut
+  annually, historically in April.
+versioning:
+  scheme: uri-path
+  current: v1.12
+  latest: v1.13
+  channels: [experimental, stable, frozen]
+  cadence: annual (historically April)
+  docs: https://www.desmos.com/api
+deprecation:
+  policy: >-
+    Prior stable versions are moved to the "frozen" channel and remain hosted and
+    loadable at their pinned path, but receive no further updates. Desmos does not
+    document forced sunset dates for frozen versions.
+  channel: frozen
+  changelog: https://www.desmos.com/api/changelog
+status_page: https://status.desmos.com
+terms: https://www.desmos.com/api-terms

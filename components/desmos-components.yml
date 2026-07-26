@@ -1,0 +1,38 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.desmos.com/api/v1.12/docs/index.html
+description: >-
+  Desmos ships its entire developer product as embeddable, client-side UI
+  components rather than a REST API. The Desmos API is a JavaScript library,
+  loaded via a versioned script tag, that mounts interactive math calculators
+  into a DOM element in the browser or a web app. Each calculator is instantiated
+  with a JavaScript constructor and controlled through a client-side object model
+  (expressions, state, screenshots, events). There is no server-side API surface.
+docs:
+  - https://www.desmos.com/api/v1.12/docs/index.html
+  - https://www.desmos.com/api/v1.12/docs/3d.html
+  - https://www.desmos.com/api/v1.12/docs/geometry.html
+loader:
+  script: https://www.desmos.com/api/v1.12/calculator.js?apiKey=YOUR_API_KEY
+  note: >-
+    Single script include exposes the global `Desmos` namespace. The version is
+    pinned in the URL path (v1.12 is the current stable release). Self-hosting of
+    the API assets is available for partners who require full infrastructure
+    control.
+families:
+  calculators:
+    description: Embeddable interactive calculator surfaces, each mounted client-side into a page element and driven by a JavaScript constructor + object model.
+    components:
+      - {name: Graphing Calculator, constructor: "Desmos.GraphingCalculator(element, options)", description: Full-featured 2D graphing surface with an expressions list — plots equations, inequalities, tables, points, sliders, and regressions.}
+      - {name: 3D Calculator, constructor: "Desmos.Calculator3D(element, options)", description: Three-dimensional graphing surface for surfaces, curves, and points in space.}
+      - {name: Geometry Calculator, constructor: "Desmos.Geometry(element, options)", description: Interactive geometry construction and analysis tool. Must be separately enabled per API key.}
+      - {name: Scientific Calculator, constructor: "Desmos.ScientificCalculator(element, options)", description: Scientific calculator with keypad, trigonometric and logarithmic functions. Must be separately enabled per API key.}
+      - {name: Four-Function Calculator, constructor: "Desmos.FourFunctionCalculator(element, options)", description: Basic arithmetic calculator surface. Must be separately enabled per API key.}
+  object_model:
+    description: Client-side control surface exposed on each calculator instance (not UI components, but the programmable API of the embedded component).
+    capabilities:
+      - Expression management (setExpression / setExpressions / removeExpression / expressionAnalysis)
+      - Full graph state get/set and serialization (getState / setState)
+      - Static image / screenshot export (screenshot / asyncScreenshot)
+      - Observers and events on expressions, viewport, and state changes
+      - Math-quill rendered math input fields

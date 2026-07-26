@@ -1,0 +1,37 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.desmos.com/api/changelog
+docs: https://www.desmos.com/api/changelog
+description: >-
+  Structured capture of the Desmos API changelog. Desmos versions the API by
+  semantic-style version pinned in the script URL path (e.g. /api/v1.12/). A new
+  stable version is released annually (historically in April); the "experimental"
+  channel tracks unreleased changes and "frozen" channels preserve prior stable
+  versions unchanged. This artifact records the recent version window; the live
+  changelog is the source of truth.
+versioning:
+  scheme: uri-path semantic version
+  channel: experimental | stable | frozen
+  current_stable: v1.12
+  latest: v1.13
+  cadence: new stable version annually (historically April)
+  detail: lifecycle/desmos-lifecycle.yml
+entries:
+  - version: v1.13.0
+    latest: true
+    highlights:
+      - Added pointOutline property for expression styling
+  - version: v1.12.0
+    highlights:
+      - Added the repeat() function
+      - New perceptually uniform color spaces (okhsv, oklab, oklch)
+      - Recursive functions supported in regression models
+      - Added the discretedist() function
+  - version: v1.11.0
+    highlights:
+      - Statistics tooling — confidence intervals and hypothesis testing
+      - New point styles (square, plus, triangle, diamond, star)
+  - version: v1.10.0
+    highlights:
+      - Complex numbers in the graphing and scientific calculators
+      - Direct regression creation and recursive function capability

@@ -1,21 +1,73 @@
 aid: desmos
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/desmos.png
 name: Desmos
-description: 'Desmos is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  Desmos (Desmos Studio PBC) is the dead-simple way to embed rich, interactive
+  math into a web page or web app. Its developer product is not a REST API but a
+  client-side JavaScript library that mounts embeddable calculators — a
+  full-featured Graphing Calculator, a 3D Calculator, and Geometry, Scientific,
+  and Four-Function calculators — controlled through a browser object model
+  (expressions, graph state, screenshots, and events). The API loads via a single
+  versioned script include and authenticates with an API key passed as a URL
+  parameter. Founded in 2011 by Eli Luberoff and originally backed by GV, the
+  world-renowned Desmos calculators now operate as an independent public benefit
+  corporation and remain free to all, while the Desmos curriculum business was
+  acquired by Amplify in 2022.
 url: https://raw.githubusercontent.com/api-evangelist/desmos/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - gv
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: enriched
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer
-apis: []
+- Education
+- Mathematics
+- Graphing Calculator
+- Embeddable
+- JavaScript
+- EdTech
+- Data Visualization
+apis:
+- name: Desmos API
+  description: >-
+    Client-side JavaScript API for embedding interactive Desmos calculators
+    (Graphing, 3D, Geometry, Scientific, Four-Function) into web pages and apps,
+    controlled through a browser object model.
+  humanURL: https://www.desmos.com/api/v1.12/docs/index.html
+  baseURL: https://www.desmos.com/api/v1.12/
+  properties:
+  - type: Documentation
+    url: https://www.desmos.com/api/v1.12/docs/index.html
+  - type: APIReference
+    url: https://www.desmos.com/api/v1.12/docs/index.html
+  - type: Components
+    url: components/desmos-components.yml
+  - type: Authentication
+    url: authentication/desmos-authentication.yml
+  - type: Sandbox
+    url: sandbox/desmos-sandbox.yml
+  - type: ChangeLog
+    url: changelog/desmos-changelog.yml
+  - type: Lifecycle
+    url: lifecycle/desmos-lifecycle.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -23,4 +75,45 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://desmos.com
+  url: https://www.desmos.com
+- type: DeveloperPortal
+  url: https://www.desmos.com/api
+- type: Documentation
+  url: https://www.desmos.com/api/v1.12/docs/index.html
+- type: APIReference
+  url: https://www.desmos.com/api/v1.12/docs/index.html
+- type: GettingStarted
+  url: https://www.desmos.com/api/v1.12/docs/index.html
+- type: SignUp
+  url: https://www.desmos.com/my-api
+- type: ChangeLog
+  url: https://www.desmos.com/api/changelog
+- type: StatusPage
+  url: https://status.desmos.com
+- type: Deprecation
+  url: lifecycle/desmos-lifecycle.yml
+- type: TermsOfService
+  url: https://www.desmos.com/api-terms
+- type: PrivacyPolicy
+  url: https://www.desmos.com/privacy
+- type: Blog
+  url: https://blog.desmos.com
+- type: GitHubOrganization
+  url: https://github.com/desmosinc
+- type: Components
+  url: components/desmos-components.yml
+- type: Authentication
+  url: authentication/desmos-authentication.yml
+- type: Sandbox
+  url: sandbox/desmos-sandbox.yml
+- type: Lifecycle
+  url: lifecycle/desmos-lifecycle.yml
+- type: DomainSecurity
+  url: security/desmos-domain-security.yml
+- type: LLMsTxt
+  url: llms/desmos-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

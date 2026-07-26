@@ -1,0 +1,23 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.desmos.com/api/v1.12/docs/index.html
+docs: https://www.desmos.com/my-api
+description: >-
+  Desmos publishes a demo API key directly in its documentation so developers
+  can load and evaluate the calculator API before requesting a production key.
+  The demo key is rate/usage limited and intended for development only. All
+  values below are published verbatim by Desmos; none are invented.
+modes:
+  - name: demo
+    key: dcb31709b452b1cf9dc26972add0fda6
+    usage: >-
+      Documented demo/development API key embedded in the official API docs. Use
+      to prototype embeds locally; not for production traffic.
+  - name: production
+    key: null
+    usage: >-
+      Request a unique production API key at https://www.desmos.com/my-api.
+      Four-Function, Scientific, and Geometry calculators are enabled per key on
+      request.
+notes:
+  - The API has no test-vs-live server separation — it is a client-side JS library, so the "sandbox" is the demo key plus local prototyping.

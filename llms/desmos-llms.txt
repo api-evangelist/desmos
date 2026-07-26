@@ -1,0 +1,25 @@
+# Desmos
+
+> Desmos (Desmos Studio PBC) is the dead-simple way to embed rich, interactive math into a web page or web app. Its developer product is a client-side JavaScript API that mounts embeddable graphing, 3D, geometry, scientific, and four-function calculators, controlled through a browser object model. Authentication is a single API key passed on the script URL. Founded 2011 by Eli Luberoff; the calculators operate as an independent public benefit corporation and remain free to all.
+
+## API
+- [Desmos API docs (v1.12)](https://www.desmos.com/api/v1.12/docs/index.html): Reference for the embeddable Graphing Calculator and its client-side object model.
+- [3D Calculator API](https://www.desmos.com/api/v1.12/docs/3d.html): Embed 3D graphs.
+- [Geometry API](https://www.desmos.com/api/v1.12/docs/geometry.html): Embed the geometry tool.
+- [API overview](https://www.desmos.com/api): Product overview and version channels.
+- [Get an API key](https://www.desmos.com/my-api): Request a production API key.
+
+## Docs
+- [Changelog](https://www.desmos.com/api/changelog): Dated version history of the API.
+- [API Terms of Service](https://www.desmos.com/api-terms): Terms governing API use.
+- [Privacy Policy](https://www.desmos.com/privacy): Privacy policy.
+- [Status](https://status.desmos.com): Service status page.
+- [Blog](https://blog.desmos.com): Des-blog product and company news.
+- [GitHub (desmosinc)](https://github.com/desmosinc): Desmos open-source repositories.
+
+## Artifacts
+- [Components](https://raw.githubusercontent.com/api-evangelist/desmos/refs/heads/main/components/desmos-components.yml): Embeddable calculator component catalog.
+- [Authentication](https://raw.githubusercontent.com/api-evangelist/desmos/refs/heads/main/authentication/desmos-authentication.yml): API-key auth profile.
+- [Sandbox](https://raw.githubusercontent.com/api-evangelist/desmos/refs/heads/main/sandbox/desmos-sandbox.yml): Demo API key and test guidance.
+- [Changelog](https://raw.githubusercontent.com/api-evangelist/desmos/refs/heads/main/changelog/desmos-changelog.yml): Structured recent version entries.
+- [Lifecycle](https://raw.githubusercontent.com/api-evangelist/desmos/refs/heads/main/lifecycle/desmos-lifecycle.yml): Version channels and status page.
