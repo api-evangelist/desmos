@@ -85,6 +85,11 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/amplify/
+  name: Amplify
+  x-relationship: acquired
+  x-evidence: "Founded in 2011 by Eli Luberoff and originally backed by GV, the world-renowned Desmos calculators now operate as an independent public benefit corporation and remain free to all, while the Desmos curriculum business was acquired by Amplify"
 - type: Website
   url: https://www.desmos.com
 - type: DeveloperPortal
